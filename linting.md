@@ -1,5 +1,7 @@
 # Linting Issues Fix Guide
 
+WORKING_DIRECTORY: .claude-work/impl-20250915-125617-2966
+
 This document provides a comprehensive guide to fix the 11,470 ESLint and Python linting issues in the Claude Flow repository.
 
 ## Overview
