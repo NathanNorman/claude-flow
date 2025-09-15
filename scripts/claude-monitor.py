@@ -332,7 +332,7 @@ def main():
                 elapsed_minutes = 0
 
             session_duration = 300  # 5 hours in minutes
-            remaining_minutes = max(0, session_duration - elapsed_minutes)
+            max(0, session_duration - elapsed_minutes)  # remaining_minutes calculated but not used
 
             # Calculate burn rate from ALL sessions in the last hour
             burn_rate = calculate_hourly_burn_rate(data["blocks"], current_time)
@@ -358,8 +358,8 @@ def main():
 
             # Color codes
             cyan = "\033[96m"
-            green = "\033[92m"
-            blue = "\033[94m"
+            # green = "\033[92m"  # Unused color
+            # blue = "\033[94m"  # Unused color
             red = "\033[91m"
             yellow = "\033[93m"
             white = "\033[97m"
@@ -395,7 +395,7 @@ def main():
             # Predictions - convert to configured timezone for display
             try:
                 local_tz = pytz.timezone(args.timezone)
-            except:
+            except Exception:
                 local_tz = pytz.timezone("Europe/Warsaw")
             predicted_end_local = predicted_end_time.astimezone(local_tz)
             reset_time_local = reset_time.astimezone(local_tz)
