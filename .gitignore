@@ -1,0 +1,100 @@
+# Dependencies
+node_modules/
+.deno/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+*.exe
+*.tsbuildinfo
+.turbo/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+.nyc_output/
+tests/results/
+tests/logs/
+*.lcov
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.temp
+.cache/
+tmp/
+
+# Development
+*.pid
+*.seed
+*.pid.lock
+
+# ========== PROJECT SPECIFIC ==========
+# Large binaries and archives (should never be committed)
+bin/claude-flow-node-pkg
+*.pkg
+*.tgz
+*.tar.gz
+*.zip
+archive/
+repomix-output.md
+
+# Session data and checkpoints (generated files)
+.claude/checkpoints/
+.claude/sessions/
+.claude/cache/
+.claude-flow/
+.hive-mind/
+.swarm/
+.ruv-swarm/
+
+# Generated reports and analysis
+reports/
+analysis-reports/
+benchmark/
+validation-test/
+
+# Database files
+*.db
+*.sqlite*
+*.db-journal
+*.db-wal
+
+# Configuration and runtime data
+claude-flow.config.json
+memory/
+coordination/
