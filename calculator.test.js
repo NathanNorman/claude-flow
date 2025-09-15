@@ -1,7 +1,7 @@
 /**
  * Comprehensive Test Suite for Enhanced Calculator
  * Created by Swarm Coordination System
- * 
+ *
  * Test Coverage:
  * - Basic functionality
  * - Input validation
@@ -182,7 +182,7 @@ describe('Enhanced Calculator', () => {
 
     test('should handle fractional exponents', () => {
       expect(calculator.power(4, 0.5)).toBe(2);
-      expect(calculator.power(8, 1/3)).toBeCloseTo(2, 10);
+      expect(calculator.power(8, 1 / 3)).toBeCloseTo(2, 10);
     });
 
     test('should throw for invalid inputs', () => {
