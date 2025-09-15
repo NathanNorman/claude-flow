@@ -248,7 +248,7 @@ class FoundationAgentIntegration:
 
         # Separate features and target
         X = data.drop(columns=[target_column])
-        # y = data[target_column]  # Not used
+        y = data[target_column]
 
         # Create preprocessing pipeline
         # pipeline = self.builder.create_preprocessing_pipeline(X)  # Not used
