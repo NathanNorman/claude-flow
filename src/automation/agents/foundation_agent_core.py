@@ -403,7 +403,7 @@ def main():
 
     # Train baseline models
     print("\nTraining baseline models...")
-    results = builder.train_baseline_models(X, y)
+    builder.train_baseline_models(X, y)
 
     # Create ensemble
     print("\nCreating ensemble baseline...")
