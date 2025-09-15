@@ -7,7 +7,7 @@ A CLI tool that coordinates multiple Claude API calls with different specialized
 Claude Flow is a Node.js CLI that:
 - Spawns multiple Claude instances with specialized prompts ("agents")
 - Coordinates their work through a session management system
-- Provides a web dashboard to monitor progress
+- Tracks progress through terminal output and SQLite session data
 - Generates code, tests, and documentation through parallel AI execution
 
 ## Example
