@@ -207,8 +207,8 @@ export class Command {
         stdio: ['pipe', 'pipe', 'pipe'],
       });
 
-      let stdout = [];
-      let stderr = [];
+      const stdout = [];
+      const stderr = [];
 
       child.stdout.on('data', (data) => {
         stdout.push(data);

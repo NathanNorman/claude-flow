@@ -1172,7 +1172,7 @@ https://github.com/ruvnet/claude-code-flow/docs/windows-installation.md
           const swarmData = metadataQuery.all(swarmId);
 
           // Parse swarm information
-          let swarmInfo = {
+          const swarmInfo = {
             id: swarmId,
             name: swarmId,
             status: 'unknown',

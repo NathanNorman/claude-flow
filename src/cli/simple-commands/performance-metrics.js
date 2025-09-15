@@ -16,7 +16,7 @@ const TASK_METRICS_FILE = path.join(METRICS_DIR, 'task-metrics.json');
 const SYSTEM_METRICS_FILE = path.join(METRICS_DIR, 'system-metrics.json');
 
 // In-memory metrics cache
-let metricsCache = {
+const metricsCache = {
   tasks: [],
   agents: {},
   system: [],

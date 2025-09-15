@@ -792,7 +792,7 @@ COORDINATION KEY POINTS:
     console.log();
 
     // Note: Concurrent display disabled in favor of interactive-style stream processing
-    let concurrentDisplay = null;
+    const concurrentDisplay = null;
     // if (this.options.nonInteractive && this.options.outputFormat === 'stream-json') {
     //   const { createConcurrentDisplay } = await import('./concurrent-display.js');
     //
@@ -1181,7 +1181,7 @@ COORDINATION KEY POINTS:
           const taskPrompt = this.createTaskPrompt(task, agent, workflow);
 
           // Check if we should chain from a previous task
-          let chainOptions = {};
+          const chainOptions = {};
           if (
             this.enableChaining &&
             this.options.outputFormat === 'stream-json' &&
@@ -1291,7 +1291,7 @@ COORDINATION KEY POINTS:
           const taskPrompt = this.createTaskPrompt(task, agent, workflow);
 
           // Check if we should chain from a previous task
-          let chainOptions = {};
+          const chainOptions = {};
           if (
             this.enableChaining &&
             this.options.outputFormat === 'stream-json' &&

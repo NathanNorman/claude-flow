@@ -1041,7 +1041,7 @@ export function showCommandHelp(name) {
       for (const line of optionLines) {
         const match = line.match(/^\s*(--.+?)\s{2,}(.+)$/);
         if (match) {
-          let [_, flags, description] = match;
+          const [_, flags, description] = match;
           // Check for default value in description
           const defaultMatch = description.match(/\(default: (.+?)\)/);
           const option = {

@@ -185,7 +185,7 @@ async function setConfigValue(subArgs, flags) {
   }
 
   try {
-    let config = await readJsonFile(configFile, {});
+    const config = await readJsonFile(configFile, {});
 
     // Parse value appropriately
     let parsedValue = value;

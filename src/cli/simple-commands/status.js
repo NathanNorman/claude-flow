@@ -108,7 +108,7 @@ async function getResourceUsage() {
     };
 
     // Get CPU info
-    let cpuCores = os.cpus().length;
+    const cpuCores = os.cpus().length;
     let loadAvg = 'N/A';
 
     try {

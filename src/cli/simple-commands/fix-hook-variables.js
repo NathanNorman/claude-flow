@@ -242,7 +242,7 @@ export async function fixHookVariablesCommand(args = [], flags = {}) {
   };
 
   // Find files to fix
-  let files = args.length > 0 ? args : await findSettingsFiles();
+  const files = args.length > 0 ? args : await findSettingsFiles();
 
   if (files.length === 0) {
     printError('No settings.json files found');

@@ -548,7 +548,7 @@ async function getStepOptimizations(
 }
 
 function applyStepOptimizations(state: any, optimizations: any[]): any {
-  let optimizedState = { ...state };
+  const optimizedState = { ...state };
 
   for (const opt of optimizations) {
     switch (opt.type) {
