@@ -216,7 +216,7 @@ class FeatureEngineer:
                 X_binned[f"{col}_bin_eq_freq"] = pd.qcut(
                     X[col], q=n_bins, labels=False, duplicates="drop"
                 )
-            except:
+            except Exception:
                 # If qcut fails due to duplicates, use regular cut
                 X_binned[f"{col}_bin_eq_freq"] = pd.cut(
                     X[col], bins=n_bins, labels=False
@@ -249,7 +249,7 @@ class FeatureEngineer:
 
         # Fit selector
         X_numeric = X.select_dtypes(include=[np.number])
-        X_selected = selector.fit_transform(X_numeric, y)
+        selector.fit_transform(X_numeric, y)  # X_selected not used
 
         # Get selected features
         selected_features = X_numeric.columns[selector.get_support()].tolist()
@@ -326,7 +326,7 @@ class FeatureEngineer:
         selected_features = X_numeric.columns[selector.support_].tolist()
 
         # Get ranking
-        ranking = dict(zip(X_numeric.columns, selector.ranking_))
+        # ranking = dict(zip(X_numeric.columns, selector.ranking_))  # Not used
 
         # Create result DataFrame
         X_result = X[selected_features]
