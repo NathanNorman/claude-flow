@@ -155,7 +155,7 @@ def run_refinement_workflow():
             "max_features": ["sqrt", "log2", None],
         }
 
-        rf_result = targeted_optimizer.optimize_hyperparameters_grid(
+        targeted_optimizer.optimize_hyperparameters_grid(
             estimator=RandomForestClassifier(random_state=42),
             param_grid=rf_params,
             X=X_train,
@@ -174,7 +174,7 @@ def run_refinement_workflow():
             "subsample": Real(0.6, 1.0),
         }
 
-        gb_result = targeted_optimizer.optimize_hyperparameters_bayesian(
+        targeted_optimizer.optimize_hyperparameters_bayesian(
             estimator=GradientBoostingClassifier(random_state=42),
             search_spaces=gb_search_spaces,
             X=X_train,
@@ -187,7 +187,7 @@ def run_refinement_workflow():
         # Optimize feature engineering
         logger.info("Optimizing feature engineering strategies...")
 
-        fe_result = targeted_optimizer.optimize_feature_engineering(
+        targeted_optimizer.optimize_feature_engineering(
             X=X_train,
             y=y_train,
             base_model=RandomForestClassifier(n_estimators=100, random_state=42),
@@ -335,7 +335,7 @@ if __name__ == "__main__":
             "--analyze-performance true",
             shell=True,
         )
-    except:
+    except Exception:
         pass
 
     logger.info("\nRefinement agent work complete!")
