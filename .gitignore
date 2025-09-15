@@ -97,4 +97,4 @@ validation-test/
 # Configuration and runtime data
 claude-flow.config.json
 memory/
-coordination/
+coordination/.claude-work/
