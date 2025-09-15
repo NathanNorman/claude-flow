@@ -22,7 +22,7 @@ This will spawn multiple Claude agents (planner, coder, tester) that work togeth
 
 - **Multi-agent coordination**: Spawn multiple Claude instances with different specialized prompts
 - **Session management**: SQLite database tracks agent coordination and progress
-- **Web dashboard**: Monitor agent activity and results in real-time  
+- **Progress tracking**: Monitor agent coordination through terminal output  
 - **Workflow automation**: Pre-configured agent roles for common development tasks
 - **Task persistence**: Resume interrupted workflows across sessions
 - **Parallel execution**: Multiple agents can work simultaneously
