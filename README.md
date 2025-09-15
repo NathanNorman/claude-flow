@@ -1,23 +1,22 @@
-# 🌊 Claude-Flow v2.0.0 Alpha: AI Orchestration Platform
+# Claude Flow - Claude API Orchestration Tool
 
-<div align="center">
+A CLI tool that coordinates multiple Claude API calls with different specialized prompts to automate development tasks.
 
-[![🌟 Star on GitHub](https://img.shields.io/github/stars/ruvnet/claude-flow?style=for-the-badge&logo=github&color=gold)](https://github.com/ruvnet/claude-flow)
-[![📈 Downloads](https://img.shields.io/npm/dt/claude-flow?style=for-the-badge&logo=npm&color=blue&label=Downloads)](https://www.npmjs.com/package/claude-flow)
-[![📦 Latest Release](https://img.shields.io/npm/v/claude-flow?style=for-the-badge&logo=npm&color=green&label=v2.0.0)](https://www.npmjs.com/package/claude-flow)
-[![⚡ Claude Code](https://img.shields.io/badge/Claude%20Code-Optimized-green?style=for-the-badge&logo=anthropic)](https://github.com/ruvnet/claude-flow)
-[![🏛️ Agentics Foundation](https://img.shields.io/badge/Agentics-Foundation-crimson?style=for-the-badge&logo=openai)](https://discord.com/invite/dfxmpwkG2D)
-[![🐝 Hive-Mind](https://img.shields.io/badge/Hive--Mind-AI%20Coordination-purple?style=for-the-badge&logo=swarm)](https://github.com/ruvnet/claude-flow)
-[![🧠 Neural](https://img.shields.io/badge/Neural-87%20MCP%20Tools-blue?style=for-the-badge&logo=pytorch)](https://github.com/ruvnet/claude-flow)
-[![🛡️ MIT License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge&logo=opensourceinitiative)](https://opensource.org/licenses/MIT)
+## What This Actually Does
 
-</div>
+Claude Flow is a Node.js CLI that:
+- Spawns multiple Claude instances with specialized prompts ("agents")
+- Coordinates their work through a session management system
+- Provides a web dashboard to monitor progress
+- Generates code, tests, and documentation through parallel AI execution
 
----
+## Example
 
-## 🌟 **Overview**
+```bash
+npx claude-flow swarm "Create a REST API for user management" --strategy development
+```
 
-**Claude-Flow v2 Alpha** is an enterprise-grade AI orchestration platform that reimagines how developers build with AI. By combining **hive-mind swarm intelligence**, **neural pattern recognition**, and **87 advanced MCP tools**, Claude-Flow enables unprecedented AI-powered development workflows.
+This will spawn multiple Claude agents (planner, coder, tester) that work together to create a complete API with tests and documentation.
 
 ### 🎯 **Key Features**
 
