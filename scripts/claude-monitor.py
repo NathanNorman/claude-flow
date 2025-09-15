@@ -332,7 +332,9 @@ def main():
                 elapsed_minutes = 0
 
             session_duration = 300  # 5 hours in minutes
-            max(0, session_duration - elapsed_minutes)  # remaining_minutes calculated but not used
+            max(
+                0, session_duration - elapsed_minutes
+            )  # remaining_minutes calculated but not used
 
             # Calculate burn rate from ALL sessions in the last hour
             burn_rate = calculate_hourly_burn_rate(data["blocks"], current_time)
