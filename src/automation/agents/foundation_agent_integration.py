@@ -246,7 +246,7 @@ class FoundationAgentIntegration:
         data = self.load_dataset(config.get("dataset_path", "sample"))
         target_column = config.get("target_column", "target")
 
-        # Separate features and target  
+        # Separate features and target
         data.drop(columns=[target_column])  # X not used in this function
         # y = data[target_column]  # Not used in this function
 
@@ -254,7 +254,7 @@ class FoundationAgentIntegration:
         # pipeline = self.builder.create_preprocessing_pipeline(X)  # Not used
 
         return {
-            "status": "completed", 
+            "status": "completed",
             "pipeline_created": True,
             "feature_count": len(self.builder.feature_names),
             "timestamp": datetime.now().isoformat(),
@@ -269,7 +269,7 @@ class FoundationAgentIntegration:
 
         # Separate features and target
         X = data.drop(columns=[target_column])
-        # y = data[target_column]  # Not used
+        y = data[target_column]
 
         # Train baseline models
         results = self.builder.train_baseline_models(X, y, cv_folds)
