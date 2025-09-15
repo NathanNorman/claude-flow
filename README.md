@@ -18,16 +18,16 @@ npx claude-flow swarm "Create a REST API for user management" --strategy develop
 
 This will spawn multiple Claude agents (planner, coder, tester) that work together to create a complete API with tests and documentation.
 
-### 🎯 **Key Features**
+## Key Features
 
-- **🐝 Hive-Mind Intelligence**: Queen-led AI coordination with specialized worker agents
-- **🧠 Neural Networks**: 27+ cognitive models with WASM SIMD acceleration
-- **🔧 87 MCP Tools**: Comprehensive toolkit for swarm orchestration, memory, and automation
-- **🔄 Dynamic Agent Architecture (DAA)**: Self-organizing agents with fault tolerance
-- **💾 SQLite Memory System**: Persistent `.swarm/memory.db` with 12 specialized tables
-- **🪝 Advanced Hooks System**: Automated workflows with pre/post operation hooks
-- **📊 GitHub Integration**: 6 specialized modes for repository management
-- **🌐 Flow Nexus Cloud Platform**: E2B sandboxes, AI swarms, challenges, and marketplace integration
+- **Multi-agent coordination**: Spawn multiple Claude instances with different specialized prompts
+- **Session management**: SQLite database tracks agent coordination and progress
+- **Web dashboard**: Monitor agent activity and results in real-time  
+- **Workflow automation**: Pre-configured agent roles for common development tasks
+- **Task persistence**: Resume interrupted workflows across sessions
+- **Parallel execution**: Multiple agents can work simultaneously
+- **GitHub integration**: Automate repository operations
+- **MCP tool integration**: Works with Model Context Protocol tools
 
 > 🔥 **Revolutionary AI Coordination**: Build faster, smarter, and more efficiently with AI-powered development orchestration
 
