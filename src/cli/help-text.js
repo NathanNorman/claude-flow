@@ -42,7 +42,7 @@ USAGE:
   claude-flow hive-mind spawn "Build API" --claude  # Open Claude Code CLI
   
   # After setup, use without npx:
-  claude-flow start --ui --swarm         # Start with swarm intelligence UI
+  claude-flow start --swarm              # Start with swarm coordination
   claude-flow swarm "build REST API"     # Deploy multi-agent workflow
   claude-flow swarm "create service" --claude  # Open Claude Code CLI with swarm
 
