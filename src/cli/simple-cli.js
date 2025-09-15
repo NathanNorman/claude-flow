@@ -63,10 +63,9 @@ function printCommandHelp(command) {
 // Legacy help function for backward compatibility
 function printLegacyHelp() {
   console.log(`
-🌊 Claude-Flow v${VERSION} - Enterprise-Grade AI Agent Orchestration Platform
+🌊 Claude-Flow v${VERSION} - Claude API Orchestration Tool
 
-🎯 ENTERPRISE FEATURES: Complete ruv-swarm integration with 90+ MCP tools, neural networking, and production-ready infrastructure
-⚡ ALPHA 85: Advanced automation capabilities & stream-JSON chaining for multi-agent pipelines
+Coordinates multiple Claude API calls with specialized prompts for development automation.
 
 USAGE:
   claude-flow <command> [options]
