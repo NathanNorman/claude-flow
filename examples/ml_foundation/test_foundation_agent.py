@@ -191,21 +191,21 @@ def main():
 
     # Test 1: Classification
     try:
-        class_results = test_classification()
+        test_classification()
         print("\n✅ Classification test completed successfully!")
     except Exception as e:
         print(f"\n❌ Classification test failed: {e}")
 
     # Test 2: Regression
     try:
-        reg_results = test_regression()
+        test_regression()
         print("\n✅ Regression test completed successfully!")
     except Exception as e:
         print(f"\n❌ Regression test failed: {e}")
 
     # Test 3: Auto detection
     try:
-        auto_results = test_auto_detect()
+        test_auto_detect()
         print("\n✅ Auto-detection test completed successfully!")
     except Exception as e:
         print(f"\n❌ Auto-detection test failed: {e}")
