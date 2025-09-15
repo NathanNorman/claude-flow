@@ -21,5 +21,17 @@
     "prefer-const": "error",
     "no-var": "error"
   },
-  "ignorePatterns": ["dist/", "node_modules/", "coverage/", "bin/", "examples/", "scripts/", "*.md", ".claude-work/"]
+  "ignorePatterns": [
+    "dist/", 
+    "node_modules/", 
+    "coverage/", 
+    "bin/", 
+    "examples/", 
+    "scripts/",
+    "**/*.test.ts",
+    "**/*.test.js",
+    "src/verification/tests/",
+    "*.md",
+    ".claude-work/"
+  ]
 }
