@@ -293,7 +293,6 @@ class CrossValidator:
 
             # Custom scoring function for MLE-STAR models
             def mle_star_scorer(estimator, X_test, y_test):
-                predictions = estimator.predict(X_test)
                 metrics = estimator.evaluate(X_test, y_test)
                 return metrics.validation_accuracy
 
@@ -574,7 +573,7 @@ class ModelEvaluator:
                 # Get prediction probabilities if available
                 try:
                     pred_proba = getattr(model, "predict_proba", lambda x: None)(X_test)
-                except:
+                except Exception:
                     pred_proba = None
 
                 metrics = self.metrics_calculator.classification_metrics(
@@ -599,7 +598,7 @@ class ModelEvaluator:
                     importances = model.feature_importances_
                     feature_names = [f"feature_{i}" for i in range(len(importances))]
                     result.feature_importance = dict(zip(feature_names, importances))
-            except:
+            except Exception:
                 pass
 
         except Exception as e:
