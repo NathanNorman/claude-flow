@@ -101,7 +101,7 @@ class FoundationAgentIntegration:
                         value_str = line.replace("Value:", "").strip()
                         try:
                             entries[current_key] = json.loads(value_str)
-                        except:
+                        except Exception:
                             entries[current_key] = value_str
 
                 return entries
@@ -248,10 +248,10 @@ class FoundationAgentIntegration:
 
         # Separate features and target
         X = data.drop(columns=[target_column])
-        y = data[target_column]
+        # y = data[target_column]  # Not used
 
         # Create preprocessing pipeline
-        pipeline = self.builder.create_preprocessing_pipeline(X)
+        # pipeline = self.builder.create_preprocessing_pipeline(X)  # Not used
 
         return {
             "status": "completed",
@@ -269,7 +269,7 @@ class FoundationAgentIntegration:
 
         # Separate features and target
         X = data.drop(columns=[target_column])
-        y = data[target_column]
+        # y = data[target_column]  # Not used
 
         # Train baseline models
         results = self.builder.train_baseline_models(X, y, cv_folds)
