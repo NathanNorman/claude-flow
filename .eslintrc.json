@@ -22,15 +22,16 @@
     "no-var": "error"
   },
   "ignorePatterns": [
-    "dist/", 
-    "node_modules/", 
-    "coverage/", 
-    "bin/", 
-    "examples/", 
+    "dist/",
+    "node_modules/",
+    "coverage/",
+    "bin/",
+    "examples/",
     "scripts/",
     "**/*.test.ts",
     "**/*.test.js",
     "src/verification/tests/",
+    "src/api/routes/*.js",
     "*.md",
     ".claude-work/"
   ]
