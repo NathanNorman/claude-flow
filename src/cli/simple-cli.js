@@ -70,24 +70,22 @@ Coordinates multiple Claude API calls with specialized prompts for development a
 USAGE:
   claude-flow <command> [options]
 
-🚀 INSTALLATION & ENTERPRISE SETUP:
-  npx claude-flow@2.0.0 init --sparc  # Enterprise SPARC + ruv-swarm integration
+INSTALLATION:
+  npx claude-flow@2.0.0 init --sparc  # Initialize with workflow templates
   
   The --sparc flag creates:
-  • Complete ruv-swarm integration with 27 MCP tools
-  • Neural network processing with WASM optimization
-  • Multi-agent coordination (hierarchical, mesh, ring, star topologies)
-  • Cross-session memory and persistent learning
-  • GitHub workflow automation (6 specialized modes)
-  • Production-ready Docker infrastructure
-  • Enterprise security and compliance features
+  • Agent coordination templates
+  • Session management setup  
+  • Basic workflow configurations
+  • GitHub integration setup
+  • Web dashboard access
 
-🧠 SWARM INTELLIGENCE COMMANDS (v2.0.0):
-  swarm "objective" [--strategy] [--mode] [--max-agents N] [--parallel] [--monitor]
-    --strategy: research, development, analysis, testing, optimization, maintenance
-    --mode: centralized, distributed, hierarchical, mesh, hybrid
-    --parallel: Enable parallel execution (2.8-4.4x speed improvement)
-    --monitor: Real-time swarm monitoring and performance tracking
+SWARM COMMANDS:
+  swarm "objective" [--strategy] [--mode] [--max-agents N] [--parallel]
+    --strategy: research, development, analysis, testing, optimization
+    --mode: centralized, distributed, hierarchical
+    --parallel: Enable parallel agent execution
+    --monitor: Real-time progress monitoring
 
 🐙 GITHUB WORKFLOW AUTOMATION (v2.0.0):
   github gh-coordinator        # GitHub workflow orchestration and coordination
